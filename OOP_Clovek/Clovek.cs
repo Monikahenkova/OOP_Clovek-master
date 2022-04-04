@@ -20,6 +20,7 @@ namespace OOP_Clovek
         public int Spánek { get; set; }
         public int Boj { get; set; }
         public int Útěk { get; set; }
+        public string Prohra { get; set; }
 
         //konstruktor - pomocí této metody vznikne konkrétní objekt - instance třídy
         public Clovek()
@@ -30,51 +31,119 @@ namespace OOP_Clovek
             energie = 100;
             Zivot = 100;
             dovednost = 0;
-            Spánek = 0;
-            Boj = 0;
-            Útěk = 0;
-        }
+            Prohra = "Žiješ";
+        } 
         
         public void Zestarnout()
-        {
-            energie -= 15;
+        {  
+            if (Zivot > 0)
+            {
+                energie -= 20;
             if(energie < 0)
             {
                 energie = 0;
             }
-            Zivot -= 10;
+            Zivot -= 20;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej." ;
+
+            }
         }
 
         public void ZvysitDovednost()
         {
-            dovednost += 20;
-            energie -= 10;
+            if (Zivot > 0)
+            {
+                dovednost += 20;
+            energie -= 15;
+            if (energie < 0)
+            {
+                energie = 0;
+            }
+            Zivot -= 15;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej.";
+
+            }
         }
          
         public void PridatEnergii()
         {
-            energie += 30;
-            Zivot -= 10;
+            if (Zivot > 0)
+            {
+                energie += 30; 
+            if (energie < 0)
+            {
+                energie = 0;
+            }
+            Zivot -= 30;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej.";
 
+            }
         }
 
         public void Spát()
         {
-            energie += 15;
-            Zivot += 5;
+            if (Zivot > 0)
+            {
+                energie += 10;
+            if (energie < 0)
+            {
+                energie = 0;
+            }
+            Zivot += 15;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej.";
+
+            }
         }
 
         public void Bojuj()
         {
-            energie -= 30;
-            dovednost += 15;
+            if (Zivot > 0)
+            {
+                dovednost += 15;
+            energie -= 35;
+            if (energie < 0)
+            {
+                energie = 0;
+            }
+            Zivot -= 10;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej.";
+
+            }
         }
 
         public void Utéct()
         {
-            energie -= 10;
+            if (Zivot > 0)
+            {
+                energie -= 30;
+            if (energie < 0)
+            {
+                energie = 0;
+            }
             Zivot += 10;
+            }
+            else if (Zivot <= 0)
+            {
+                Prohra = "Seš tuhej.";
+
+            }
         }
-        
+
+      
     }
 }

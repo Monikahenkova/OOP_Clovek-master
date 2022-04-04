@@ -45,57 +45,79 @@ namespace OOP_Clovek
             textBox.Text += "Život: " + clovek.Zivot.ToString() + "\n";
             textBox.Text += "Energie: " + clovek.Energie.ToString() + "\n";
             textBox.Text += "Dovednost: " + clovek.Dovednost.ToString() + "\n";
-            textBox.Text += "Spánek: " + clovek.Spánek.ToString() + "\n";
-            textBox.Text += "Boj: " + clovek.Boj.ToString() + "\n";
-            textBox.Text += "Útěk: " + clovek.Útěk.ToString() + "\n";
+            textBox.Text += "Prohra: " + clovek.Prohra.ToString() + "\n";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             karel.Zestarnout();
-            jan.Zestarnout();
             Zobraz(karel, txt1);
-            Zobraz(jan, txt2);
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
             karel.ZvysitDovednost();
-            jan.ZvysitDovednost();
             Zobraz(karel, txt1);
-            Zobraz(jan, txt2);
-
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
             karel.PridatEnergii();
-            jan.PridatEnergii();
-            Zobraz(karel, txt1);
-            Zobraz(jan, txt2);
+            Zobraz(karel, txt1);  
         }
 
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
             karel.Spát();
-            jan.Spát();
             Zobraz(karel, txt1);
-            Zobraz(jan, txt2);
         }
 
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
             karel.Bojuj();
-            jan.Bojuj();
             Zobraz(karel, txt1);
-            Zobraz(jan, txt2);
         }
 
         private void Button_Click5(object sender, RoutedEventArgs e)
         {
             karel.Utéct();
-            jan.Utéct();
             Zobraz(karel, txt1);
+        }
+
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+            jan.Zestarnout();
+            Zobraz(jan, txt2);
+        }
+
+        private void Button_Click7(object sender, RoutedEventArgs e)
+        {
+            jan.ZvysitDovednost();
+            Zobraz(jan, txt2);
+
+        }
+
+        private void Button_Click8(object sender, RoutedEventArgs e)
+        {
+            jan.PridatEnergii();
+            Zobraz(jan, txt2);
+        }
+
+        private void Button_Click9(object sender, RoutedEventArgs e)
+        {
+            jan.Spát();
+            Zobraz(jan, txt2);
+        }
+
+        private void Button_Click10(object sender, RoutedEventArgs e)
+        {
+            jan.Bojuj();
+            Zobraz(jan, txt2);
+        }
+
+        private void Button_Click11(object sender, RoutedEventArgs e)
+        {
+            jan.Utéct();
             Zobraz(jan, txt2);
         }
 
