@@ -17,9 +17,9 @@ namespace OOP_Clovek
         public int Energie { get => energie; }
         public int Zivot { get; set; }
         public int Dovednost { get => dovednost; }
-        public int Spánek { get => energie; }
-        public int Lenost { get; set; }
-        public int Bojovat { get => dovednost; }
+        public int Spánek { get; set; }
+        public int Boj { get; set; }
+        public int Útěk { get; set; }
 
         //konstruktor - pomocí této metody vznikne konkrétní objekt - instance třídy
         public Clovek()
@@ -30,50 +30,51 @@ namespace OOP_Clovek
             energie = 100;
             Zivot = 100;
             dovednost = 0;
-            Lenost = 0;
+            Spánek = 0;
+            Boj = 0;
+            Útěk = 0;
         }
         
         public void Zestarnout()
         {
-            energie -= 10;
+            energie -= 15;
             if(energie < 0)
             {
                 energie = 0;
             }
-            Zivot += 2;
+            Zivot -= 10;
         }
 
         public void ZvysitDovednost()
         {
             dovednost += 20;
-            energie += 10;
+            energie -= 10;
         }
          
         public void PridatEnergii()
         {
             energie += 30;
-            if(energie < 100)
-            {
-                energie = 0;
-            }
-            Zivot -= 1;
+            Zivot -= 10;
+
         }
 
         public void Spát()
         {
             energie += 15;
-            Lenost += 25;
-            dovednost -= 5;
+            Zivot += 5;
         }
 
-        public void Bojovat()
+        public void Bojuj()
         {
-            energie -= 50;
-            Lenost -= 10;
-            Zivot -= 1;
-            dovednost += 5;
+            energie -= 30;
+            dovednost += 15;
         }
 
-
+        public void Utéct()
+        {
+            energie -= 10;
+            Zivot += 10;
+        }
+        
     }
 }

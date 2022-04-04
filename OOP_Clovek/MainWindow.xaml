@@ -10,12 +10,12 @@
 
         <TextBox Name="txt1" HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="397"/>
         <TextBox Name="txt2" HorizontalAlignment="Left" Margin="509,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" Height="397"/>
-        <Button Content="Posuň čas" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.275,-0.073" Height="37" Width="119" Click="Button_Click"/>
+        <Button Content="Zestárni" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.275,-0.073" Height="37" Width="119" Click="Button_Click"/>
         <Button Content="Zvyš dovedost" HorizontalAlignment="Left" Margin="323,68,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click1"/>
-        <Button Content="Zvyš energii" HorizontalAlignment="Left" Margin="323,126,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click2"/>
-        <Button Content="Spát" HorizontalAlignment="Left" Margin="323,187,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click3" />
-        <Button Content="Bojovat" HorizontalAlignment="Left" Height="37" Margin="323,244,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click4" />
-        <Button Content="Jít sjetej bojovat" HorizontalAlignment="Left" Margin="323,299,0,0" VerticalAlignment="Top" Height="37" Width="119"/>
+        <Button Content="Vypij protein drink" HorizontalAlignment="Left" Margin="323,126,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click2"/>
+        <Button Content="Spi" HorizontalAlignment="Left" Margin="323,187,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click3" />
+        <Button Content="Bojuj" HorizontalAlignment="Left" Height="37" Margin="323,244,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click4" />
+        <Button Content="Uteč" HorizontalAlignment="Left" Margin="323,299,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click5"/>
         
 
 

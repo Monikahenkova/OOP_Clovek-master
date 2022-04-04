@@ -46,9 +46,8 @@ namespace OOP_Clovek
             textBox.Text += "Energie: " + clovek.Energie.ToString() + "\n";
             textBox.Text += "Dovednost: " + clovek.Dovednost.ToString() + "\n";
             textBox.Text += "Spánek: " + clovek.Spánek.ToString() + "\n";
-            textBox.Text += "Lenost: " + clovek.Spánek.ToString() + "\n";
-            textBox.Text += "Bojovat: " + clovek.Spánek.ToString() + "\n";
-
+            textBox.Text += "Boj: " + clovek.Boj.ToString() + "\n";
+            textBox.Text += "Útěk: " + clovek.Útěk.ToString() + "\n";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -86,7 +85,20 @@ namespace OOP_Clovek
 
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-
+            karel.Bojuj();
+            jan.Bojuj();
+            Zobraz(karel, txt1);
+            Zobraz(jan, txt2);
         }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            karel.Utéct();
+            jan.Utéct();
+            Zobraz(karel, txt1);
+            Zobraz(jan, txt2);
+        }
+
     }
 }
+
